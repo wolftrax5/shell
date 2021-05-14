@@ -20,5 +20,7 @@
     "build": "webpack --mode production",
     "serve": "serve dist -p 3001",
     "clean": "rm -rf dist"
-  }
+  },
+  "repository": "https://github.com/wolftrax5/shell.git",
+  "author": "Alejandro Medina <5almero5@gmail.com> (https://github.com/wolftrax5)"
 }
