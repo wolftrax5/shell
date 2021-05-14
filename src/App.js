@@ -2,9 +2,9 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 import React from "react";
 import localRoutes from "./routes";
-// import remoteRoutes from "app2/routes";
+import remoteRoutes from "app1/routes";
 
-const routes = [...localRoutes ];
+const routes = [...localRoutes,...remoteRoutes ];
 
 const App = () => (
   <HashRouter>
