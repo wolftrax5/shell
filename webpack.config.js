@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const ModuleFederationPlugin = require("webpack").container.ModuleFederationPlugin;
-const deps = require("./package.json").dependencies;
+// const ModuleFederationPlugin = require("webpack").container.ModuleFederationPlugin;
+// const deps = require("./package.json").dependencies;
 
 module.exports = {
     entry: "./src/index",
@@ -25,7 +25,7 @@ module.exports = {
         ],
     },
     plugins: [
-        new ModuleFederationPlugin({
+    /*    new ModuleFederationPlugin({
             name: "shell",
             filename: "remoteApp.js",
             library: { type: "var", name: "shell" },
@@ -49,7 +49,7 @@ module.exports = {
                 },
             },
 
-        }),
+        }),*/
         new HtmlWebpackPlugin({
         template: "./public/index.html",
         }),
